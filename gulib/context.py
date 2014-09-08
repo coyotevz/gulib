@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-    ulib.context
+    gulib.context
     ~~~~~~~~~~~~~~~~
 
     MainContext iterator based on linux select function.

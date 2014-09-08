@@ -3,14 +3,14 @@
 
 __version__ = '0.0.1'
 
-from ulib.signal import (
+from gulib.signal import (
     SIGNAL_RUN_FIRST,
     SIGNAL_RUN_LAST,
     usignal,
     SignaledObject,
 )
 
-from ulib.context import (
+from gulib.context import (
     PRIORITY_HIGH,
     PRIORITY_DEFAULT,
     PRIORITY_HIGH_IDLE,
@@ -20,11 +20,11 @@ from ulib.context import (
     MainContext,
 )
 
-from ulib.loop import (
+from gulib.loop import (
     MainLoop,
 )
 
-from ulib.object import (
+from gulib.object import (
     UObject,
 )
 

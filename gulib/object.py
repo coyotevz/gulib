@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from ulib.signal import SignaledObject
-from ulib.utils import FreezedContext, norm, frozendict
+from gulib.signal import SignaledObject
+from gulib.utils import FreezedContext, norm, frozendict
 
 
 class UObject(SignaledObject):

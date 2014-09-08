@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from ulib.context import main_context_default
+from gulib.context import main_context_default
 
 class MainLoop(object):
 

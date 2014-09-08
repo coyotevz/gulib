@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-from ulib.utils import norm
+from gulib.utils import norm
 
 SIGNAL_RUN_FIRST, SIGNAL_RUN_LAST = range(2)
 

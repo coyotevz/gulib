@@ -2,7 +2,7 @@
 
 import pytest
 
-from ulib.signal import (
+from gulib.signal import (
     SIGNAL_RUN_FIRST, SIGNAL_RUN_LAST, Signal, SignaledObject, usignal
 )
 

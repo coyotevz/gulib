@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 """
-    ulib.utils
+    gulib.utils
     ~~~~~~~~~~
 
-    Some utilities functions and objects for ulib.
+    Some utilities functions and objects for gulib.
 """
 
 def norm(name):
