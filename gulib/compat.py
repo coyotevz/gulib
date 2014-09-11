@@ -11,8 +11,10 @@ PYTHON3 = sys.version_info > (3, 0)
 
 if PYTHON3:
     string_type = str
+    ustring = str
 else:
     string_type = basestring
+    ustring = unicode
 
 try:
     callable = callable
