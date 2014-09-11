@@ -116,7 +116,7 @@ class SignaledObject(object):
         return self._decl_signals[name].connect_after(callback, **data)
 
     def __new__(cls, *args, **kwargs):
-        self = object.__new__(cls, *args, **kwargs)
+        self = object.__new__(cls)
         signals = {}
         # copy base __signals__ declarations
         declared = {}
