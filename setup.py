@@ -28,8 +28,8 @@ setup_d = dict(
     packages=['gulib'],
 )
 
-if PYTHON3:
-    setup_d['use_2to3'] = True
+#if PYTHON3:
+#    setup_d['use_2to3'] = True
 
 if __name__ == '__main__':
     setup(**setup_d)
