@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 
+try:
+    PYTHON3 = not str is bytes
+except NameError:
+    PYTHON3 = False
+
 import os
 import re
 
@@ -11,7 +16,7 @@ v_file = open(os.path.join(os.path.dirname(__file__),
 VERSION = re.compile(r".*__version__ = '(.*?)'", re.S)\
             .match(v_file.read()).group(1)
 
-setup(
+setup_d = dict(
     name='gulib',
     version=VERSION,
     author="Augusto Roccasalva",
@@ -22,3 +27,9 @@ setup(
     license="LGPL",
     packages=['gulib'],
 )
+
+if PYTHON3:
+    setup_d['use_2to3'] = True
+
+if __name__ == '__main__':
+    setup(**setup_d)

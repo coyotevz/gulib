@@ -2,8 +2,9 @@
 
 import sys
 from gulib.utils import norm
+from gulib.compat import string_type
 
-SIGNAL_RUN_FIRST, SIGNAL_RUN_LAST = range(2)
+SIGNAL_RUN_FIRST, SIGNAL_RUN_LAST = list(range(2))
 
 
 class Signal(object):
@@ -126,7 +127,7 @@ class SignaledObject(object):
         for name, args in declared.items():
             handler = args.get('handler', None)
             flag = args.get('flag', SIGNAL_RUN_LAST)
-            if isinstance(handler, basestring):
+            if isinstance(handler, string_type):
                 if hasattr(cls, handler):
                     handler = getattr(cls, handler)
                 else:
