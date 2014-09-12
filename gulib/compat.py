@@ -25,6 +25,12 @@ except NameError:
 if PYTHON3:
     def b(s): return s.encode("latin-1")
     def u(s): return s
+    ord2 = lambda x: x
+    chr2 = lambda x: bytes([x])
+    bytes3 = bytes
 else:
     def b(s): return s
     def u(s): return unicode(s.replace(r'\\', r'\\\\'), "unicode_escape")
+    ord2 = ord
+    chr2 = chr
+    bytes3 = lambda x: bytes().join([chr(c) for c in x])
