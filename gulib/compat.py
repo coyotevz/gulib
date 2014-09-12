@@ -23,7 +23,7 @@ except NameError:
         return any("__call__" in klass.__dict__ for klass in type(obj).__mro__)
 
 if PYTHON3:
-    def b(s): return s.encode("utf-8")
+    def b(s): return s.encode("latin-1")
     def u(s): return s
     def s(s): return s.decode("utf-8")
     ord2 = lambda x: x
